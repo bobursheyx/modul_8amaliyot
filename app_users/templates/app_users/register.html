@@ -15,5 +15,12 @@
         Akkauntingiz allaqachon bormi ?
         <a href="{% url 'login' %}" class="text-blue-900 font-bold">Kirish</a>
     </small>
+    <div class="row">
+        <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+            <button class="mt-4 p-2 w-full rounded border border-blue-900 text-blue-900 hover:text-white hover:bg-blue-900 transition">
+                <a href="{% url 'social:begin' 'google-oauth2' %}">Login With Google</a>
+            </button>
+        </div>
+    </div>
 </form>
 {% endblock content %}

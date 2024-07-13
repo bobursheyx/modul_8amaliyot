@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Home page</h1>
+<a href="{% url 'logout' %}">
+    <span class="material-icons">
+        group
+    </span>
+    Tizimdan chiqish</a>
+    <div class="row">
+        <div class="col-sm-12 mb-3">
+            <h4 class="text-center">Welcome {{ user.username }}</h4>
+        </div>
+    </div>
+{% endblock content %}
